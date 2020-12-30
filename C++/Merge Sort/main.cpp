@@ -6,11 +6,11 @@ void merge(int left, int right, int mid,int arr[])
     nL= mid-left+1;
     nR=right-mid;
     int l[50],r[50];
-    for(i=0;i<nL;i++)
+    for(i=0; i<nL; i++)
     {
         l[i]=arr[left+i];
     }
-    for(j=0;j<nR;j++)
+    for(j=0; j<nR; j++)
     {
         r[j]= arr[mid+1+j];
     }
@@ -24,7 +24,7 @@ void merge(int left, int right, int mid,int arr[])
             arr[k]=l[i];
             i++;
         }
-        else{
+        else {
             arr[k]=r[j];
             j++;
         }
@@ -57,7 +57,7 @@ void mergeSort(int arr[],int l,int r)
 void printArray(int arr[],int n)
 {
     cout<<"elements after sorting"<<endl;
-    for(int i=0;i<n;i++)
+    for(int i=0; i<n; i++)
     {
         cout<<arr[i]<<" ";
     }
@@ -69,7 +69,7 @@ int main(void)
     cout<<"enter the size of array (MAX.50)"<<endl;
     cin>>n;
     cout<<"enter the array elements"<<endl;
-    for(i=0;i<n;i++)
+    for(i=0; i<n; i++)
     {
         cin>>arr[i];
     }
